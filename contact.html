@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Visit &amp; Pickup — Beauchamp Bend</title>
+<meta name="description" content="Pickup directions, hours, and contact for Beauchamp Bend farm in Williams, California.">
+
+<meta property="og:title" content="Visit &amp; Pickup — Beauchamp Bend">
+<meta property="og:description" content="Pickup directions, hours, and contact for Beauchamp Bend in Williams, California.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/farm-home-4.jpeg">
+
+<link rel="icon" href="images/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">
+      <img src="images/logo.jpg" alt="">
+      <span>
+        <span class="brand-name">Beauchamp Bend</span>
+        <span class="brand-sub">Regenerative Farm</span>
+      </span>
+    </a>
+
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="about.html">Our Farm</a></li>
+        <li><a href="contact.html" aria-current="page">Visit</a></li>
+      </ul>
+    </nav>
+
+    <a class="btn btn--sm nav-cta" href="store.html">Shop</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Pickup &amp; contact</span>
+      <h1>Come by the farm</h1>
+      <p>
+        All orders are collected on site. Once you've ordered, we'll email you
+        pickup instructions and a time to come out.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap two-col">
+
+      <!-- ================================================ DETAILS -->
+      <div>
+        <span class="eyebrow">Where to find us</span>
+        <h2 class="section-title">Directions &amp; hours</h2>
+
+        <ul class="info-list" style="margin-top:2rem">
+          <li>
+            <span class="label">Location</span>
+            <span class="value">Williams, California</span>
+            <!-- TODO: add street address + Google Maps link -->
+          </li>
+          <li>
+            <span class="label">Pickup</span>
+            <span class="value">By arrangement</span>
+            <!-- TODO: confirm regular pickup hours -->
+          </li>
+          <li>
+            <span class="label">Email</span>
+            <span class="value"><a href="mailto:hello@beauchampbend.com">hello@beauchampbend.com</a></span>
+          </li>
+          <li>
+            <span class="label">Instagram</span>
+            <span class="value"><a href="https://www.instagram.com/beauchampbend/" target="_blank" rel="noopener">@beauchampbend</a></span>
+          </li>
+        </ul>
+
+        <div class="note" style="margin-top:2rem">
+          <strong>Everything is pickup only.</strong> We don't ship — eggs and
+          fresh chicken don't travel well, and we'd rather hand you a cold
+          bird than a warm one.
+        </div>
+      </div>
+
+      <!-- ================================================== FORM -->
+      <div>
+        <span class="eyebrow">Get in touch</span>
+        <h2 class="section-title">Send a message</h2>
+        <p class="section-lead" style="margin-bottom:2rem">
+          Questions about availability, sizing, or a specific pickup time —
+          send a note and we'll get back to you.
+        </p>
+
+        <!--
+          TODO — form endpoint
+          --------------------
+          This form currently has no server behind it. Two options once the
+          site is on Hostinger:
+
+          1. Formspree (free tier, zero maintenance):
+             - Sign up at formspree.io, create a form, copy the endpoint
+             - Replace action="mailto:..." below with
+               action="https://formspree.io/f/YOUR_ID" method="POST"
+
+          2. Hostinger PHP mail():
+             - Add contact.php alongside this file
+             - Set action="contact.php" method="POST"
+             - Needs spam protection (honeypot minimum)
+
+          Until then, the mailto fallback below works but opens the visitor's
+          email client.
+        -->
+        <form class="form"
+              action="mailto:hello@beauchampbend.com"
+              method="post"
+              enctype="text/plain">
+
+          <div class="field">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone <span style="text-transform:none;letter-spacing:0;color:#8b9484">(optional)</span></label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel">
+          </div>
+
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+
+          <button class="btn" type="submit">Send message</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="section cta">
+    <div class="wrap">
+      <h2>Ready to order?</h2>
+      <p>
+        Chicken, eggs, and seasonal walnuts — all sold direct from the farm.
+      </p>
+      <div class="cta-actions">
+        <a class="btn" href="store.html">Go to the store</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo.jpg" alt="Beauchamp Bend emblem">
+        <p>
+          A twenty-acre regenerative farm outside Williams, California.
+          Walnuts, eggs, and pasture-raised chicken — sold direct.
+        </p>
+      </div>
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="store.html#chicken">Pasture-Raised Chicken</a></li>
+          <li><a href="store.html#eggs">Pasture-Raised Eggs</a></li>
+          <li><a href="store.html#walnuts">Chandler Walnuts</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Farm</h4>
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="about.html#practices">How We Farm</a></li>
+          <li><a href="contact.html">Visit &amp; Pickup</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Elsewhere</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/beauchampbend/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="mailto:hello@beauchampbend.com">hello@beauchampbend.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year">2026</span> Beauchamp Bend. All rights reserved.</span>
+      <span>Williams, California</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>

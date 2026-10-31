@@ -3,23 +3,336 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Beauchamp Bend — Coming Soon</title>
-<style>
-  body{margin:0;min-height:100vh;display:grid;place-items:center;
-       font-family:Georgia,'Times New Roman',serif;background:#2d3a2e;color:#f4efe4;
-       text-align:center;padding:2rem}
-  h1{font-size:clamp(1.8rem,5vw,3rem);margin:0 0 .5rem;letter-spacing:.02em}
-  p{max-width:32rem;line-height:1.6;color:#c9c2b0;margin:0}
-  .badge{display:inline-block;margin-top:2rem;padding:.5rem 1rem;border:1px solid #6b7f5e;
-         border-radius:99px;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:#9fb08d}
-</style>
+
+<title>Beauchamp Bend — Regenerative Walnuts, Eggs &amp; Pasture-Raised Chicken</title>
+<meta name="description" content="A 20-acre regenerative farm outside Williams, California. No-till Chandler walnuts, pasture-raised eggs, and chicken moved to fresh grass every day.">
+
+<meta property="og:title" content="Beauchamp Bend — Regenerative Farm">
+<meta property="og:description" content="No-till Chandler walnuts, pasture-raised eggs, and chicken moved to fresh grass every day. Grown just outside Williams, California.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/hero-farm.jpeg">
+
+<link rel="icon" href="images/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <div>
-    <h1>Beauchamp Bend</h1>
-    <p>Regeneratively grown walnuts, pasture-raised eggs, and chicken from our 20 acres
-       just outside Williams, California.</p>
-    <div class="badge">Site under construction</div>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============================================================ NAV -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="index.html">
+      <img src="images/logo.jpg" alt="">
+      <span>
+        <span class="brand-name">Beauchamp Bend</span>
+        <span class="brand-sub">Regenerative Farm</span>
+      </span>
+    </a>
+
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="store.html">Store</a></li>
+        <li><a href="about.html">Our Farm</a></li>
+        <li><a href="contact.html">Visit</a></li>
+      </ul>
+    </nav>
+
+    <a class="btn btn--sm nav-cta" href="store.html">Shop</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
   </div>
+</header>
+
+<main id="main">
+
+  <!-- ========================================================== HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+
+      <div class="hero-copy">
+        <span class="eyebrow">Williams, California</span>
+        <h1>Grown in the <em>bend</em> of the road.</h1>
+        <p class="hero-sub">
+          Chandler walnuts, eggs from hens on fresh grass, and pasture-raised
+          chicken — raised on twenty acres where our family has farmed for
+          four generations.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn" href="store.html">Shop the harvest</a>
+          <a class="btn btn--ghost" href="about.html">How we farm</a>
+        </div>
+
+        <dl class="hero-meta">
+          <div><dt>20</dt><dd>Acres</dd></div>
+          <div><dt>4</dt><dd>Generations</dd></div>
+          <div><dt>0</dt><dd>Tillage passes</dd></div>
+        </dl>
+      </div>
+
+      <figure class="hero-figure">
+        <img src="images/hero-farm.jpeg"
+             alt="A flock of brown laying hens foraging between rows of walnut trees at Beauchamp Bend"
+             width="1200" height="1500" fetchpriority="high">
+        <figcaption class="hero-badge">Hens moved to fresh grass daily</figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+  <!-- ======================================================== TICKER -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>No-till Chandler walnuts</span>
+      <span>Hens on fresh pasture daily</span>
+      <span>Adaptive goat grazing</span>
+      <span>Direct from the farm</span>
+      <span>Williams, California</span>
+      <span>No-till Chandler walnuts</span>
+      <span>Hens on fresh pasture daily</span>
+      <span>Adaptive goat grazing</span>
+      <span>Direct from the farm</span>
+      <span>Williams, California</span>
+    </div>
+  </div>
+
+  <!-- ====================================================== PRODUCTS -->
+  <section class="section">
+    <div class="wrap">
+
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">From our fields</span>
+          <h2 class="section-title">What's available now</h2>
+          <p class="section-lead">
+            Everything is sold direct and picked up at the farm. No middlemen,
+            no cold storage, no shrink wrap.
+          </p>
+        </div>
+        <a class="btn btn--ghost btn--sm" href="store.html">See the full store</a>
+      </div>
+
+      <div class="product-grid">
+
+        <article class="card">
+          <div class="card-media">
+            <span class="tag">Farm fresh</span>
+            <img src="images/chicken-1.jpg"
+                 alt="Whole pasture-raised chicken from Beauchamp Bend"
+                 width="800" height="1000" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Pasture-Raised Chicken</h3>
+            <p class="card-desc">
+              Whole birds, fully dressed, 3–6&nbsp;lbs. Raised outdoors on grass
+              with room to range.
+            </p>
+            <div class="card-foot">
+              <div class="price">$20 <small>from, per bird</small></div>
+              <a class="btn btn--sm" href="store.html#chicken">Reserve</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <span class="tag">Gathered daily</span>
+            <img src="images/farm-home-1.jpeg"
+                 alt="A black wire basket filled with brown eggs at golden hour, a hen looking on"
+                 width="800" height="1000" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Pasture-Raised Eggs</h3>
+            <p class="card-desc">
+              A dozen large brown eggs from hens that spend their days on
+              pasture. Golden yolks, thick shells.
+            </p>
+            <div class="card-foot">
+              <div class="price">$7 <small>per dozen</small></div>
+              <a class="btn btn--sm" href="store.html#eggs">Buy</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <span class="tag tag--soon">Seasonal</span>
+            <img src="images/farm-home-2.jpeg"
+                 alt="Goats grazing the orchard floor at Beauchamp Bend"
+                 width="800" height="1000" loading="lazy">
+          </div>
+          <div class="card-body">
+            <h3>Chandler Walnuts</h3>
+            <p class="card-desc">
+              English walnuts grown without tillage, harvested in the fall.
+              Light halves, high oil, sealed for freshness.
+            </p>
+            <div class="card-foot">
+              <div class="price">Ask <small>availability</small></div>
+              <a class="btn btn--sm btn--ghost" href="contact.html">Inquire</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================= STORY -->
+  <section class="section story">
+    <div class="wrap story-grid">
+
+      <figure class="story-figure">
+        <img src="images/farm-home-5.jpeg"
+             alt="Three brown hens walking through tall grass beneath a rainbow over the farm"
+             width="1000" height="1250" loading="lazy">
+      </figure>
+
+      <div>
+        <span class="eyebrow">The bend</span>
+        <h2 class="section-title">Named for a great-grandfather and a curve in the road</h2>
+        <p>
+          Beauchamp Bend sits on twenty acres where the road bends — a piece of
+          ground the Beauchamp family has worked for four generations. We farm it
+          the way the land asks to be farmed: without a plow, with animals moving
+          across it, and with the soil treated as the crop we're actually growing.
+        </p>
+        <p>
+          The walnuts are no-till. The goats rotate through the orchard and eat
+          down the ground cover instead of us mowing it. The hens move to fresh
+          grass every day, which is why the yolks are the colour they are. None
+          of that is a marketing angle — it's just what works here, and it
+          happens to make better food.
+        </p>
+        <p class="signature">— The Dillard family</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================== PRACTICES -->
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow">How we farm</span>
+      <h2 class="section-title">Three things we don't compromise on</h2>
+
+      <div class="practices">
+        <div class="practice">
+          <span class="practice-num">01</span>
+          <h3>No-till orchard</h3>
+          <p>
+            We don't turn the soil. Every pass of a plow burns organic matter
+            and breaks the fungal networks that feed a walnut tree. Leaving it
+            alone builds structure, holds water, and puts more nutrients into
+            the nut.
+          </p>
+        </div>
+        <div class="practice">
+          <span class="practice-num">02</span>
+          <h3>Adaptive grazing</h3>
+          <p>
+            The goats move to a new paddock on a schedule set by how fast the
+            grass is actually growing — not a calendar. They knock back the
+            ground cover, drop manure where it's needed, and we never run a
+            mower through the orchard.
+          </p>
+        </div>
+        <div class="practice">
+          <span class="practice-num">03</span>
+          <h3>Hens on fresh grass</h3>
+          <p>
+            The laying flock gets new ground every single day. Constant access
+            to fresh pasture means real forage in the diet, less feed bought in,
+            and eggs that taste like something.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================== BAND -->
+  <section class="band">
+    <img src="images/farm-home-4.jpeg"
+         alt="Goats grazing in fog on the pasture at Beauchamp Bend"
+         width="1600" height="2000" loading="lazy">
+    <blockquote>
+      <p>“Healthy soil grows healthy plants, which grow healthy animals, which grow healthy people.”</p>
+      <cite>The whole reason we farm this way</cite>
+    </blockquote>
+  </section>
+
+  <!-- =========================================================== CTA -->
+  <section class="section cta">
+    <div class="wrap">
+      <h2>Pick it up at the farm</h2>
+      <p>
+        Everything is sold direct and collected on site just outside Williams.
+        Place your order and we'll send pickup instructions by email.
+      </p>
+      <div class="cta-actions">
+        <a class="btn" href="store.html">Shop now</a>
+        <a class="btn btn--ghost" href="contact.html">Directions &amp; hours</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ========================================================= FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <img src="images/logo.jpg" alt="Beauchamp Bend emblem">
+        <p>
+          A twenty-acre regenerative farm outside Williams, California.
+          Walnuts, eggs, and pasture-raised chicken — sold direct.
+        </p>
+      </div>
+
+      <div>
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="store.html#chicken">Pasture-Raised Chicken</a></li>
+          <li><a href="store.html#eggs">Pasture-Raised Eggs</a></li>
+          <li><a href="store.html#walnuts">Chandler Walnuts</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Farm</h4>
+        <ul>
+          <li><a href="about.html">Our Story</a></li>
+          <li><a href="about.html#practices">How We Farm</a></li>
+          <li><a href="contact.html">Visit &amp; Pickup</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Elsewhere</h4>
+        <ul>
+          <li><a href="https://www.instagram.com/beauchampbend/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="mailto:hello@beauchampbend.com">hello@beauchampbend.com</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy; <span id="year">2026</span> Beauchamp Bend. All rights reserved.</span>
+      <span>Williams, California</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
